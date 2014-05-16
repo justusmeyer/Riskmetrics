@@ -1,0 +1,11 @@
+#AuthType Basic
+#AuthName "GoC.com"
+#AuthUserFile /home/webuser/helloworld/.htpasswd
+#Require valid-user
+RewriteEngine On
+DirectoryIndex index.php
+RewriteRule ^$ index.html [QSA]
+RewriteRule ^([^.]+)$ $1.html [QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /dispatch.php [QSA,L]
+

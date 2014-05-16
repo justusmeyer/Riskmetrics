@@ -1,0 +1,12 @@
+RewriteEngine On
+DirectoryIndex index.php
+#RewriteRule ^$ index.html [QSA]
+#RewriteRule ^([^.]+)$ $1.html [QSA]
+
+# Redirect favicon
+RewriteRule ^favicon\.ico$ /images/favicon.ico [L]
+
+RewriteCond %{REQUEST_URI} !^/(blog|blog/.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.*)$ /dispatch.php [QSA,L]

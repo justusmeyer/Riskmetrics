@@ -1,0 +1,567 @@
+@CHARSET "UTF-8";
+
+#prime{overflow: hidden; padding-left: 30px; padding-right: 20px; }
+
+table tr .item_description {width: 100px; overflow: hidden;}
+
+table tr .sku {width: 200px; }
+
+@media all
+  {
+  #page-one.footer, .page-break { display:none; }
+  }
+
+tablereports {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.tablereports {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tablereports th,
+.tablereports td {
+  padding: 8px 0px 8px 0px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.tablereports td:first-child {
+    width:200px;
+}
+.tablereports th {
+  font-weight: bold;
+}
+
+.tablereports thead th {
+  vertical-align: bottom;
+}
+
+
+.table-stripedreports tbody > tr:nth-child(odd) > td,
+.table-stripedreports tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  width: 85px;
+}
+
+.tablereports .highlight td { font-style:italic}
+.tablereports .highlight td:FIRST-CHILD {padding-left:20px; width: 175px}
+.tablereports .title td { font-weight:bold}
+.tablereports .subcatplan td:FIRST-CHILD {padding-left:20px; width: 175px}
+
+tablemaster {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tablemaster {
+  margin-bottom: 20px;
+}
+
+.tablemaster th{
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.tablemaster td {
+  padding: 5px;
+  line-height: 20px;
+  overflow:hidden;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+  font: 12px Arial, Sans-serif;
+}
+
+.tablemaster td:first-child {
+    width:180px;
+    font: 12px Arial, Sans-serif;
+    
+}
+.tablemaster th {
+  font-weight: bold;
+}
+
+.tablemaster thead th {
+  vertical-align: bottom;
+}
+
+
+.table-stripedmaster tbody > tr:nth-child(odd) > td,
+.table-stripedmaster tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  font: 12px Arial, Sans-serif;
+}
+
+.tablemaster .highlight td { font-style:italic}
+.tablemaster .highlight td:FIRST-CHILD {padding-left:20px; width: 155px}
+.tablemaster .title td { font-weight:bold}
+.tablemaster .subcatplan td:FIRST-CHILD {padding-left:20px; width: 155px}
+
+tabletitle {background-color: transparent; border-collapse: collapse; border-spacing: 0;}
+.tabletitle {margin-top: 10px;}
+.tabletitle th:FIRST-CHILD{width: 882px; background-color: none; text-align: left;border: none;}
+.tabletitle th{width: 135px; background-color: none; border: none;}
+.tabletitle thead th:nth-child(even){width: 134px; background-color: #CFDBC5; border: none;}
+.tabletitle thead th:last-child {width: 134px; background-color: #CFDBC5; border: none;}
+.tabletitle thead th:FIRST-CHILD{width: 879px; background-color: none; text-align: left;border: none;}
+
+
+tableplan {background-color: transparent; border-collapse: collapse; border-spacing: 0;}
+.tableplan {margin-bottom: 0px;}
+.tableplan thead th:FIRST-CHILD {width:70px; background-color: #CFDBC5;}
+.tableplan thead th {width:135px; border: none; background-color: #CFDBC5;}
+.tableplan tbody td:FIRST-CHILD {width:70px;}
+.tableplan tbody td {width:134px;}
+.tableplan .title th:LAST-CHILD{width: 135px; background-color: #CFDBC5; border: none;}
+.tableplan .title th:FIRST-CHILD{width: 882px; background-color: none; text-align: left;border: none;}
+.tableplan th, .tableplan td {
+  padding: 0px;
+  line-height: 25px;
+  text-align: center;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+}
+
+.tableplan input[type="text"]{ 
+	box-shadow: 1px; 
+	display: inline-block; 
+	height: 23px; 
+	width: 132px;
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 14px; 
+	background-color: #f7f6f2;
+	vertical-align: top;
+	-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px; padding:0px; margin:0px }
+
+/* Section for Orders Section*/
+.form_orderitems input[type="text"],
+.form_orderitems textarea { box-shadow: none; border:0px; display: inline-block; height: 20px;margin-bottom: 10px;font-size: 12px;line-height: 20px;color: #555555;vertical-align: middle;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px; padding:0px; margin:0px }
+.form_orderitems textarea { font-size: 12px; height: 40px; }
+.form_orderitems .item_page,
+.form_orderitems .item_page input { width:20px }
+.form_orderitems .item_subclass,
+.form_orderitems .item_subclass input { width:20px }
+.form_orderitems .item_vendorstyle,
+.form_orderitems .item_vendorstyle input { width: 50px}
+.form_orderitems .item_codes,
+.form_orderitems .item_codes input { width:40px ; text-align:center}
+.form_orderitems .item_size,
+.form_orderitems .item_size input { width: 15px ; text-align:center }
+.form_orderitems .item_price,
+.form_orderitems .item_price input { width: 50px ; text-align:center }
+.form_orderitems tbody td {height:20px}
+.form_orderitems td{ text-align:center; font-size:11px}
+.form_orderitems .item_comments,
+.form_orderitems .item_comments input { width: 150px}
+/* <---End of Orders css---> */
+
+/* Section for Orders Section for view */
+.form_orderview .item_page { width:20px }
+.form_orderview .item_subclass { width:20px }
+.form_orderview .item_vendorstyle { width: 50px}
+.form_orderview .item_codes { width:40px ; text-align:center}
+.form_orderview .item_size { width: 15px ; text-align:center }
+.form_orderview .item_price { width: 50px ; text-align:center }
+.form_orderview thead td{ text-align:center; font-size:11px}
+.form_orderview tbody td {text-align:left; height:20px}
+.form_orderview .final {text-align:center; height:20px}
+.form_orderview .sizea {text-align:center; height:20px; width:15px;}
+/* <---End of Orders View---> */
+
+
+.form_customer input[type="text"],
+.form_customer textarea { box-shadow: 1px; border:0px; display: inline-block; height: 20px; margin-bottom: 0px;font-size: 14px; color: #555555;vertical-align: top;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px; padding:0px; margin:0px }
+.form_customer tbody td tr {border-top: 1px; height:20px; vertical-align: middle;}
+.form_customer thead{ text-align:left; font-size:14px; vertical-align: middle;}
+.form_customer tr td{text-align:left; font-size:14px; vertical-align: middle;}
+
+/* This CSS section is for How To Halsbrook */
+.panel-title a {
+    display: block;
+    padding: 10px 15px;
+    margin: -10px -15px;
+}
+
+.panel-heading {
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.panel-body  {
+   overflow: hidden;
+   text-indent: 30px;
+}
+
+.panel-body p {
+text-indent: 45px;
+}
+
+.panel-body li  {
+   margin-left: 50px;
+}
+
+.panel-body img  {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 11.9px;
+  text-decoration:underline;
+}
+/* <---End of How to Halsbrook section---> */
+
+/* This CSS section is for Halsbrook Ideas tables */
+tableidea {border-spacing: 0;}
+.tableidea {margin-bottom: 0px; background-color: #F0F8FF; width:100%;}
+.tableidea tbody td:FIRST-CHILD {width:85%; text-align:left; padding-left: 10px;}
+.tableidea tbody td {width:15%; text-align:center;}
+.tableidea th, .tableidea td {
+  line-height: 25px;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+}
+/* <---End of Halsbrook Ideas tables section---> */
+
+/* This CSS section is for Welcome Page */
+#header {
+=======
+/* Container */
+#container {
+>>>>>>> FETCH_HEAD
+	width: 100%;
+	height: 160px;
+	background-color: #333333; 
+	margin: auto;
+	overflow: hidden;	
+}
+
+<<<<<<< HEAD
+#header-top {
+	height: 50px;
+	background-color: #638CC5;	
+	display: block;
+	Text-align: center;
+	list-style: none;
+	padding-top: 5px;
+	width:100%;
+	overflow: hidden;	
+}
+
+
+ul.header-top li {
+	display: inline-block;
+	color: #fff;
+	list-style-type: none;
+	Text-align: center;
+}
+
+.header-top-text {
+	list-style: none;
+	color: #5e5e5e;
+	background-color: #638CC5;	
+	display: block;
+	width:100%;
+}
+
+
+ul.header-top-text li {
+	display: inline-block;
+	list-style-type: none;
+	color: #ffffff;
+}
+
+
+ul.header-top-text a {
+	color: #FFCC33;
+	display: block;
+}
+
+ul.header-top-text a:hover {
+	color: #5e5e5e;
+}
+
+tablewelcome {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.tablewelcome {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tablewelcome th {
+  padding: 5px 5px 5px 0px;
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+  padding-left:10px;
+  font-size: 12px;
+  vertical-align: top;
+  background-color: #638CC5;	
+}
+
+.tablewelcome td {
+  padding: 5px 5px 5px 0px;
+  line-height: 15px;
+  text-align: center;
+  padding-left:10px;
+  font-size: 12px;
+  vertical-align: top;
+  background-color: #ffffff;	
+}
+
+.tablewelcome td:first-child {
+    width:200px;
+}
+
+
+.tablewelcome thead th {
+  vertical-align: bottom;
+}
+
+tablewelcomep {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.tablewelcomep {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tablewelcomep th {
+  padding: 5px 5px 5px 0px;
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+  padding-left:10px;
+  font-size: 12px;
+  vertical-align: top;
+  background-color: #638CC5;	
+}
+
+.tablewelcomep td:FIRST-CHILD, .tablewelcomep th:FIRST-CHILD {text-align: left; font-weight: bold;}
+
+.tablewelcomep td {
+  padding: 5px 5px 5px 0px;
+  line-height: 15px;
+  text-align: center;
+  padding-left:10px;
+  font-size: 12px;
+  vertical-align: top;
+  background-color: #ffffff;	
+}
+
+
+.tablewelcomep thead th {
+  vertical-align: bottom;
+}
+
+/* <---End of Welcome section---> */
+
+/* This the table Adjust */
+
+tableadjust {background-color: transparent; border-collapse: collapse; border-spacing: 0;text-align: center;}
+.tableadjust {margin-bottom: 0px;}
+.tableadjust thead th:FIRST-CHILD {width:130xp; background-color: #CFDBC5;}
+.tableadjust thead th {width:100px; border: none; background-color: #CFDBC5; text-align: center;}
+.tableadjust tbody td:FIRST-CHILD {width:130px; text-align: left;}
+.tableadjust tbody td {width:98px;}
+.tableadjust th, .tableadjust td {
+  padding: 0px;
+  line-height: 25px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.tableadjust input[type="text"], .tableadjust input td[type="text"] { 
+	box-shadow: 1px; 
+	display: inline-block; 
+	height: 23px; 
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 14px; 
+	background-color: #f7f6f2;
+	vertical-align: top;
+	-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px; padding:0px; margin:0px }
+/* <---End of Table Adjust---> */
+
+
+}
+
+#prime{padding-left:20px; padding-right:20px;overflow: hidden;}
+
+#footer {
+	padding-top: 10px;
+	height:110px;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+
+}
+
+.footer-top {
+	background-color: #fff;
+	height:80px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.footer-bottom {
+	background-color: #999;
+	height:30px;
+}
+
+/* <---Photo Upload Program---> */
+#upload{
+    font-family:'PT Sans Narrow', sans-serif;
+    background-color:#373a3d;
+    background-image:-webkit-linear-gradient(top, #373a3d, #313437);
+    background-image:-moz-linear-gradient(top, #373a3d, #313437);
+    background-image:linear-gradient(top, #373a3d, #313437);
+	float: left;
+    width:350px;
+    padding:30px;
+    border-radius:3px;
+    margin:30px 30px 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#drop{
+    background-color: #2E3134;
+    padding: 40px 50px;
+    margin-bottom: 30px;
+    border: 20px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    border-image: url('../images/border-image.png') 25 repeat;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight:bold;
+    color:#7f858a;
+}
+
+#drop a{
+    background-color:#007a96;
+    padding:12px 26px;
+    color:#fff;
+    font-size:14px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    border-radius:2px;
+    cursor:pointer;
+    display:inline-block;
+    margin-top:12px;
+    line-height:1;
+}
+
+#drop a:hover{
+    background-color:#0986a3;
+}
+
+#drop input{
+    display:none;
+}
+
+#upload ul{
+    list-style:none;
+    margin:0 -30px;
+    border-top:1px solid #2b2e31;
+    border-bottom:1px solid #3d4043;
+}
+
+#upload ul li{
+
+    background-color:#333639;
+
+    background-image:-webkit-linear-gradient(top, #333639, #303335);
+    background-image:-moz-linear-gradient(top, #333639, #303335);
+    background-image:linear-gradient(top, #333639, #303335);
+
+    border-top:1px solid #3d4043;
+    border-bottom:1px solid #2b2e31;
+    padding:15px;
+    height: 75px;
+
+    position: relative;
+}
+
+#upload ul li input{
+    display: none;
+}
+
+#upload ul li p{
+    width: 144px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #EEE;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+#upload ul li i{
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+#upload ul li canvas{
+    top: 15px;
+    left: 32px;
+    position: absolute;
+}
+
+#upload ul li span{
+    width: 15px;
+    height: 12px;
+    background: url('../images/icons.png') no-repeat;
+    position: absolute;
+    top: 34px;
+    right: 33px;
+    cursor:pointer;
+}
+
+#upload ul li.working span{
+    height: 16px;
+    background-position: 0 -12px;
+}
+
+#upload ul li.error p{
+    color:red;
+}
+
+
