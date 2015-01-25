@@ -16,4 +16,95 @@ FROM Riskmetrics.mvos";
 		return $group;
 	}
 
+	public function getTrans1(){
+		$query = "Select mean_stdev from mvos where id=1";
+			$result = @mysql_query($query);
+			$group = new Group($result, 'Mvo');
+			return $group;
+		}
+		
+	public function getTrans2(){
+		$query = "Select mean_stdev from mvos where id=2";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
+	public function getTrans3(){
+		$query = "Select mean_stdev from mvos where id=3";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
+	public function getTrans4(){
+		$query = "Select mean_stdev from mvos where id=4";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
+	public function getTrans5(){
+		$query = "Select mean_stdev from mvos where id=5";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
+	public function getTrans6(){
+		$query = "Select mean_stdev from mvos where id=6";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
+	public function getTrans7(){
+		$query = "Select mean_stdev from mvos where id=7";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
+	public function getTrans8(){
+		$query = "Select mean_stdev from mvos where id=8";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
+	public function getTrans9(){
+		$query = "Select mean_stdev from mvos where id=9";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
+	public function getTrans10(){
+		$query = "Select mean_stdev from mvos where id=10";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
+	public function getTrans11(){
+		$query = "Select mean_stdev from mvos where id=11";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
+	public function getTrans12(){
+		$query = "Select mean_stdev from mvos where id=12";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
+	public function getTrans13(){
+		$query = "Select mean_stdev from mvos where id=13";
+		$result = @mysql_query($query);
+		$group = new Group($result, 'Mvo');
+		return $group;
+	}
+	
 }

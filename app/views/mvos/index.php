@@ -35,6 +35,45 @@
 
 <?php foreach ($this->mvos as $weights): ?>
 <?php endforeach ?>
+<?php foreach(MVO::getTrans1($this->mvos) as $trans):?>
+<?php $a = $trans->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans2($this->mvos) as $trans2):?>
+<?php $b = $trans2->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans3($this->mvos) as $trans3):?>
+<?php $c = $trans3->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans4($this->mvos) as $trans4):?>
+<?php $d = $trans4->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans5($this->mvos) as $trans5):?>
+<?php $e = $trans5->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans6($this->mvos) as $trans6):?>
+<?php $f = $trans6->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans7($this->mvos) as $trans7):?>
+<?php $g = $trans7->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans8($this->mvos) as $trans8):?>
+<?php $h = $trans8->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans9($this->mvos) as $trans9):?>
+<?php $i = $trans9->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans10($this->mvos) as $trans10):?>
+<?php $j = $trans10->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans11($this->mvos) as $trans11):?>
+<?php $k = $trans11->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans12($this->mvos) as $trans12):?>
+<?php $l = $trans12->mean_stdev/100 ?>
+<?php endforeach?>
+<?php foreach(MVO::getTrans13($this->mvos) as $trans13):?>
+<?php $m = $trans13->mean_stdev/100 ?>
+<?php endforeach?>
 
 <h4>Please enter different porfolio weights here:</h4>
 <form method="post" action="/mvo/addweight/<?php echo $weights->id ?>" >
@@ -161,11 +200,11 @@
 <table class="mvo">
 	<thead>
 		<tr>
-			<th>Asset Class</th>
-			<th>Mean Return</th>
-			<th>Mean Standard Deviation</th>
-			<th>Variance</th>
-			<th>R* (approx. arithmetic return)</th>
+			<th width="20%">Asset Class</th>
+			<th width="20%">Mean Return</th>
+			<th width="20%">Mean St Dev</th>
+			<th width="20%">Variance</th>
+			<th width="20%">R* (approx. arithmetic return)</th>
 		
 		</tr>
 	</thead>
@@ -229,11 +268,11 @@
 		<?php foreach ($this->mvos as $weights): ?>
 		<tr>
 			<td><input type="text" id="form-input-readonly" readonly="" name="mvo[asset_class]" value="<?php echo $weights->asset_class ?>"></td>
-			<td><input placeholder="Corr.." <?php if ($weights->corr_1 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_1]" value="<?php echo $weights->corr_1 ?>"></td>
-			<td><input placeholder="Corr.." <?php if ($weights->corr_2 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_2]" value="<?php echo $weights->corr_2 ?>"></td>
-			<td><input placeholder="Corr.." <?php if ($weights->corr_3 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_3]" value="<?php echo $weights->corr_3 ?>"></td>
-			<td><input placeholder="Corr.." <?php if ($weights->corr_4 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_4]" value="<?php echo $weights->corr_4 ?>"></td>
-			<td><input placeholder="Corr.." <?php if ($weights->corr_5 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_5]" value="<?php echo $weights->corr_5 ?>"></td>
+			<td><input placeholder="Corr.." <?php if ($weights->corr_1 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_1]" value="<?php echo number_format(isset($weights->corr_1) ? $weights->corr_1:0,2) ?>"></td>
+			<td><input placeholder="Corr.." <?php if ($weights->corr_2 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_2]" value="<?php echo number_format($weights->corr_2,2) ?>"></td>
+			<td><input placeholder="Corr.." <?php if ($weights->corr_3 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_3]" value="<?php echo number_format($weights->corr_3,2) ?>"></td>
+			<td><input placeholder="Corr.." <?php if ($weights->corr_4 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_4]" value="<?php echo number_format($weights->corr_4,2) ?>"></td>
+			<td><input placeholder="Corr.." <?php if ($weights->corr_5 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_5]" value="<?php echo number_format($weights->corr_5,2) ?>"></td>
 			<td><input placeholder="Corr.." <?php if ($weights->corr_6 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_6]" value="<?php echo $weights->corr_6 ?>"></td>
 			<td><input placeholder="Corr.." <?php if ($weights->corr_7 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_7]" value="<?php echo $weights->corr_7 ?>"></td>
 			<td><input placeholder="Corr.." <?php if ($weights->corr_8 == "1"): ?>class="green"<?php endif;?> class="black" type="text" onchange="addWeight(this)" name="mvo[corr_8]" value="<?php echo $weights->corr_8 ?>"></td>
@@ -256,6 +295,62 @@
 </table>
 </form>
 
+<p>&nbsp;</p>
+<h4>Covariance Matrix:</h4>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Asset Class</th>
+			<th>Cash</th>
+			<th>Govt</th>
+			<th>Corp</th>
+			<th>AR</th>
+			<th>HE</th>
+			<th>LCE</th>
+			<th>SCE</th>
+			<th>EME</th>
+			<th>PE</th>
+			<th>ILBs</th>
+			<th>Comms</th>
+			<th>CRE</th>
+			<th>PERE</th>
+		</tr>
+	</thead>
+	<tbody>
+		<?php foreach ($this->mvos as $weights): ?>
+		<?php $cov1 = $weights->corr_1*($weights->mean_stdev/100)*$a ?>
+		<?php $cov2 = $weights->corr_2*($weights->mean_stdev/100)*$b ?>
+		<?php $cov3 = $weights->corr_3*($weights->mean_stdev/100)*$c ?>
+		<?php $cov4 = $weights->corr_4*($weights->mean_stdev/100)*$d ?>
+		<?php $cov5 = $weights->corr_5*($weights->mean_stdev/100)*$e ?>
+		<?php $cov6 = $weights->corr_6*($weights->mean_stdev/100)*$f ?>
+		<?php $cov7 = $weights->corr_7*($weights->mean_stdev/100)*$g ?>
+		<?php $cov8 = $weights->corr_8*($weights->mean_stdev/100)*$h ?>
+		<?php $cov9 = $weights->corr_9*($weights->mean_stdev/100)*$i ?>
+		<?php $cov10 = $weights->corr_10*($weights->mean_stdev/100)*$j ?>
+		<?php $cov11 = $weights->corr_11*($weights->mean_stdev/100)*$k ?>
+		<?php $cov12 = $weights->corr_12*($weights->mean_stdev/100)*$l ?>
+		<?php $cov13 = $weights->corr_13*($weights->mean_stdev/100)*$m ?>
+		
+		<tr>
+			<td><?php echo $weights->asset_class ?></td>
+			<td><?php echo number_format($cov1,5) ?></td>
+			<td><?php echo number_format($cov2,5) ?></td>
+			<td><?php echo number_format($cov3,5) ?></td>
+			<td><?php echo number_format($cov4,5) ?></td>
+			<td><?php echo number_format($cov5,5) ?></td>
+			<td><?php echo number_format($cov6,5) ?></td>
+			<td><?php echo number_format($cov7,5) ?></td>
+			<td><?php echo number_format($cov8,5) ?></td>
+			<td><?php echo number_format($cov9,5) ?></td>
+			<td><?php echo number_format($cov10,5) ?></td>
+			<td><?php echo number_format($cov11,5) ?></td>
+			<td><?php echo number_format($cov12,5) ?></td>
+			<td><?php echo number_format($cov13,5) ?></td>
+		</tr>
+		<?php endforeach ?>
+	</tbody>
+</table>
 
 <script>
 function addWeight(id){
