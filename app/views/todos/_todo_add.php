@@ -44,6 +44,12 @@
 					<input class="form-control" name="todos[due_date]" type="text" placeholder="mm/dd.." value="<?php echo isset($this->todos)?$this->todos->due_date:'' ?>"/>
 				</div>
 			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Link</label>
+				<div class="col-xs-3">
+					<input class="form-control" name="todos[link]" type="text" placeholder="url.." value="<?php echo isset($this->todos)?$this->todos->link:'' ?>"/>
+				</div>
+			</div>
 		</div>
 </fieldset>
 <input type="submit" value="Add / Save To Do" class="btn btn-primary" />

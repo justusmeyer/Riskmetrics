@@ -43,8 +43,9 @@
 							<thead>
 								<tr>
 									<th width="15%">Department</th>
-									<th width="70%">To Do</th>
+									<th width="55%">To Do</th>
 									<th width="15%">Action</th>
+									<th width="15%">Link</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -62,6 +63,9 @@
 											</a>
 										</div>
 									</td>
+									<td>
+											<a href="/<?php echo $week->link ?>"  class="btn btn-danger btn-small" >visit</a>
+									</td>
 								</tr>
 							<?php endforeach?>
 							</tbody>
@@ -72,8 +76,9 @@
 							<thead>
 								<tr>
 									<th width="15%">Department</th>
-									<th width="70%">To Do</th>
+									<th width="55%">To Do</th>
 									<th width="15%">Action</th>
+									<th width="15%">Link</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -91,6 +96,9 @@
 											</a>
 										</div>
 									</td>
+									<td>
+											<a href="/<?php echo $month->link ?>"  class="btn btn-danger btn-small" >visit</a>
+									</td>
 								</tr>
 							<?php endforeach?>
 							</tbody>
@@ -101,8 +109,9 @@
 							<thead>
 								<tr>
 									<th width="15%">Department</th>
-									<th width="70%">To Do</th>
+									<th width="55%">To Do</th>
 									<th width="15%">Action</th>
+									<th width="15%">Link</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -120,6 +129,9 @@
 											</a>
 										</div>
 									</td>
+									<td>
+											<a href="/<?php echo $week->quarter ?>"  class="btn btn-danger btn-small" >visit</a>
+									</td>
 								</tr>
 							<?php endforeach?>
 							</tbody>
@@ -130,8 +142,9 @@
 							<thead>
 								<tr>
 									<th width="15%">Department</th>
-									<th width="70%">To Do</th>
+									<th width="55%">To Do</th>
 									<th width="15%">Action</th>
+									<th width="15%">Link</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -148,6 +161,9 @@
 												<i class="fa fa-trash-o"></i>
 											</a>
 										</div>
+									</td>
+									<td>
+											<a href="/<?php echo $week->long ?>"  class="btn btn-danger btn-small" >visit</a>
 									</td>
 								</tr>
 							<?php endforeach?>
